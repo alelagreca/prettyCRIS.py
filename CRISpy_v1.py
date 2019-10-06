@@ -236,5 +236,5 @@ def main():
     ID, ref_seq, seq_start, seq_end, fastq_files, test_list = get_parameters()
     search_fastq(ID, ref_seq, seq_start, seq_end, fastq_files, test_list)
     print("Done")
-if __name__== "__main__":
-    main()
+# if __name__== "__main__":
+#     main()
