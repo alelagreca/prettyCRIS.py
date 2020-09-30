@@ -1,4 +1,34 @@
 ![](/crispy_logo_RL.jpg)
+# prettyCRIS.py
+prettyCRIS.py was made with the aim to create a user-friendly interface for the CRIS.py analysis program. To run the user-friendly interface (known as a "GUI"), you must open an instance of terminal or command prompt in the folder containing prettyCRISpy.py and your joined .fastq files. If you would like to run the program on example data, the example data provided in the original GitHub repository (as well as in this fork) will work nicely. The nucleic acid sequences and sample/test list IDs may be easily copied over into the program and I tried to make the labels self-explanatory.
+
+### Testing prettyCRISpy with the example data...
+Before running the example analysis, copy the fastq files into the same folder as prettyCRISpy.py, then run the prettyCRISpy.py file.
+
+Code in the example python scripts will be copied into the program as shown below (Input Label is in the comment/after the # symbol):
+```python
+ID = '...' # Paste this name into the prettyCRISpy window as the "ID"
+ref_seq = str.upper('...') # "Reference Sequence"
+seq_start = str.upper('...') # "Sequence Start
+seq_end = str.upper('...') # "Sequence End"
+fastq_files = '*.fastq' # This will not have to be changed in the program if the joined fastq files are in the same folder as the prettyCRISpy.py file
+test_list = [
+  # For the test list, paste the text in the first set of parentheses in the "ID" box in the Test List section.
+  # Paste the sequence (in the second set of parentheses) in the Test List "Seq" box.
+  # Press the "Add" button.
+  # Repeat for each member of the Test List (each on separate lines).
+            str('...'),   str.upper('...'), 
+            str('...'),   str.upper('...'),
+            ]
+```
+
+If you have any questions about CRISpy, I urge you to reach out to Drs. Shondra Miller and Patrick Connelly in the CAGE Lab at St. Jude. If you have questions specifically about prettyCRISpy, feel free to reach out to me.
+
+Thank you for your interest in prettyCRISpy! I hope you find value in it.
+
+Kindly,
+Jake Steele
+
 # CRIS.py
    Analyze NGS data for CRISPR (or any engineered endonuclease) activity and screen for clones.
    Screen for NHEJ or multiple HDR events concurrently.
